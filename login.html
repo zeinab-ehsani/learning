@@ -13,37 +13,37 @@
 </head>
 
 <body class="">
-    <section class="main-login  h-dvh py-[38px] ps-[40px] pe-sp-96  w-full flex flex-row">
+    <section class="main-login  h-dvh py-sp-40 ps-sp-40 pe-sp-96  w-full flex flex-row justify-evenly">
         <div class="img-login w-[51%] h-[100%] pl-sp-64 flex  flex-col justify-end pb-sp-56">
 
             <h6 class="text-font-36 text-white font-bold">Lorem Ipsum is simply </h6>
             <p class="text-font-24 text-white">Lorem Ipsum is simply </p>
         </div>
-        <div class="form-login w-[31%] flex flex-col gap-[24px]">
+        <div class=" right-login w-[31%] flex flex-col gap-sp-24">
             <div class=" flex flex-col gap-sp-24 justify-between">
 
                 <h4 class="text-center">Welcome to learning !</h4>
                 <div class="btn-group-register">
-                    <button class="login-btn bg-brand text-white ">Login</button>
-                    <button class="signin-btn text-white">Register</button>
+                    <button class="login-btn  text-white text-font-16">Login</button>
+                    <button class="signin-btn text-white text-font-16">Register</button>
 
 
                 </div>
 
             </div>
 
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-            <form class="flex flex-col gap-[30px]" action="#">
+            <p class="text-font-16 text-[#5B5B5B]">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <form class="flex flex-col gap-[30px] form-login" action="#">
                 <div>
-                <label for="name">User name</label>
-                <input class="py-[1rem] ps-[2rem] " type="text " placeholder="Enter your User name"><br>
+                    <label for="name">User name</label>
+                    <input class="py-sp-16 ps-sp-32 " type="text " placeholder="Enter your User name"><br>
 
 
                 </div>
                 <div class="relative">
 
                     <label for="password">Password</label><br>
-                    <input id="password" class="input-bordered w-full py-[1rem] ps-[2rem]" type="password"
+                    <input id="password" class="input-bordered w-full py-sp-16 ps-sp-32" type="password"
                         placeholder="Enter your Password">
                     <button type="button" id="togglePassword" class="absolute right-4 top-[65%] -translate-y-1/2">
                         <i id="eyeIcon" class="bi bi-eye-slash"></i>
@@ -60,14 +60,50 @@
                     </div>
                     <a href="#">Forgot Password ?</a>
                 </div>
-                <button class="bg-brand text-white  py-[13px]  rounded-[36px] w-[50%]">Login</button>
+                <button class="bg-brand text-white  py-[13px]  rounded-[36px] w-[50%] self-end">Login</button>
+
+            </form>
+            <form class="flex flex-col gap-[30px] form-register d-none" action="#">
+                <div>
+                    <label for="name">Email Address</label>
+                    <input class="py-[1rem] ps-[2rem] " type="text " placeholder="Enter your Email Address"><br>
+
+
+                </div>
+                 <div>
+                    <label for="name">User name</label>
+                    <input class="py-[1rem] ps-[2rem] " type="text " placeholder="Enter your User name"><br>
+
+
+                </div>
+                <div class="relative">
+
+                    <label for="password">Password</label><br>
+                    <input id="password2" class="input-bordered w-full py-[1rem] ps-[2rem]" type="password"
+                        placeholder="Enter your Password">
+                    <button type="button" id="togglePassword2" class="absolute right-4 top-[65%] -translate-y-1/2">
+                        <i id="eyeIcon" class="bi bi-eye-slash"></i>
+                    </button>
+                </div>
+
+                <div class="remember flex  justify-between">
+                    <div>
+                        <input class="" name="rememberme" type="checkbox">
+                        <label for="rememberme">Rememebr me</label>
+
+
+
+                    </div>
+                    <a href="#">Forgot Password ?</a>
+                </div>
+                <button class="bg-brand text-white  py-[13px]  rounded-[36px] w-[50%] self-end">Register</button>
 
             </form>
         </div>
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-<script src="./assets/js/login.js"></script>
+    <script src="./assets/js/login.js"></script>
 </body>
 
 </html>
