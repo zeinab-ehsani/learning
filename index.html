@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./src/output.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+  <header class="main-header relative">
+
+    <!-- start menu -->
+
+
+    <div class="navbar bg-base-100 h-20.75 shadow-sm">
+      <div class="navbar-start">
+
+        <a class=""><img src="./assets/img/img-home/logo-header.svg"></a>
+      </div>
+      <div class="navbar-center hidden xl:flex">
+        <ul class="menu menu-horizontal px-1 text-white d-flex gap-[80px]">
+          <li><a>Home</a></li>
+
+          <li><a>Courses</a></li>
+          <li><a>Careers</a></li>
+
+          <li><a>Blog</a></li>
+          <li><a>About Us</a></li>
+
+        </ul>
+      </div>
+      <div class="navbar-end d-flex gap-[26px]">
+        <!-- <a class="btn rounded-[80px] h-15 w-40 ms-6.5 tracking-wider text-xl">Login</a> -->
+        <a class="btn h-10 w-24 rounded-[80px] text-sm tracking-wider
+            xl:h-12 xl:w-32 xl:text-base
+            min-[1600px]:h-15 min-[1600px]:w-40 min-[1600px]:text-xl hidden md:inline-flex">Login</a>
+        <a class="btn h-10 w-24 rounded-[80px] border-0 !bg-brand-light text-sm tracking-wider text-white
+            xl:h-12 xl:w-32 xl:text-base
+            min-[1600px]:h-15 min-[1600px]:w-40 min-[1600px]:text-xl  hidden md:inline-flex">Sign Up</a>
+
+        <div class="them">
+          <div class="dropdown dropdown-end language-btn h-10 xl:h-12 min-[1600px]:h-15">
+            <div tabindex="0" role="button" class="btn h-full px-3 min-[1600px]:px-5">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="swap-off lucide lucide-sun preview-icon  ">
+                <circle cx="12" cy="12" r="4" />
+                <path d="M12 2v2" />
+                <path d="M12 20v2" />
+                <path d="m4.93 4.93 1.41 1.41" />
+                <path d="m17.66 17.66 1.41 1.41" />
+                <path d="M2 12h2" />
+                <path d="M20 12h2" />
+                <path d="m6.34 17.66-1.41 1.41" />
+                <path d="m19.07 4.93-1.41 1.41" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-chevron-down preview-icon hidden md:block">
+                <path d="m6 9 6 6 6-6" />
+              </svg>
+
+            </div>
+            <ul tabindex="-1"
+              class="dropdown-content menu bg-base-100 mt-6 rounded-box z-1 w-44 p-1.5 p-2 shadow-sm bg-white">
+              <li class="btn-dark text-dark"><a>dark</a></li>
+              <li class="btn-light"><a>light</a></li>
+              <li class="btn-warm"><a>warm</a></li>
+
+            </ul>
+          </div>
+        </div>
+        <div class="dropdown dropdown-end language-btn h-10 xl:h-12 min-[1600px]:h-15">
+          <div tabindex="0" role="button" class="btn h-full px-3 min-[1600px]:px-5">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-globe preview-icon">
+              <circle cx="12" cy="12" r="10" />
+              <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
+              <path d="M2 12h20" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-chevron-down preview-icon hidden md:block">
+              <path d="m6 9 6 6 6-6" />
+            </svg>
+
+          </div>
+          <ul tabindex="-1" class="dropdown-content menu bg-base-100 mt-6 rounded-box z-1 w-44 p-1.5 p-2 shadow-sm">
+            <li class="en-btn"><a>English</a></li>
+            <li class="fa-btn"><a>فارسی</a></li>
+          </ul>
+        </div>
+
+
+      </div>
+
+      <div class="dropdown dropdown-end text-start">
+        <div tabindex="0" role="button" class="btn btn-ghost text-white xl:hidden">
+          <!-- <svg aria-label="Menu" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+            </svg> -->
+
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+            stroke-width="2.5" stroke-linecap="round">
+            <path d="M4 6h16M10 12h10M4 18h16" />
+          </svg>
+        </div>
+        <ul tabindex="0" class="menu  dropdown-content bg-base-100 rounded-box z-10 mt-3 w-52 p-2 shadow text-black">
+          <li><a>Home</a></li>
+          <li><a>Courses</a></li>
+          <li><a>Careers</a></li>
+          <li><a>Blog</a></li>
+          <li><a>About Us</a></li>
+          <li class="md:hidden"><a>Login</a></li>
+          <li class="md:hidden"><a>Sign Up</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- end menu -->
+    <!-- start hero -->
+    <section class="hero-section h-full flex flex-row justify-between">
+      <div class="hero-right   gap-[10px]  flex flex-row h-1/2 justify-between">
+        <!-- <img src="./assets/img/img-home/girl..svg" alt=""> -->
+
+        <div class="hero-right-1 h-[100%] flex flex-col  justify-between gap-[200px] pt-16 pl-2.5 ">
+          <div class="flex flex-row bg-white h-[100px]  w-[300px] ms-7">
+            <img src="./assets/img/img-home/calculater.svg" alt="">
+
+            <span class="flex flex-col ">
+              <span class="text-dark">250k</span>
+
+              <p class="w-[100%] text-dark">Assisted Student</p>
+            </span>
+          </div>
+          <div class="card-avatar  bg-white  w-[390px] flex flex-col gap-sp-20">
+            <div class="flex flex-row gap-sp-24">
+              <div class="avatar-img">
+
+                <img src="./assets/img/img-home/Ellipse.svg" alt="">
+
+              </div>
+
+              <span class="flex flex-col  gap-[5px]">
+                <span class="name-avatar text-[rgba(89, 89, 89, 1)]">User Experience Class</span>
+
+                <span class="text-[rgba(84, 85, 103, 1)] time-avatar">Today at 12.00 PM</span>
+                <button
+                  class="bg-[rgba(216,88,126,1)]  px-[47px] py-[12px] w-[180px] font-bold rounded-[80px] text-white">Join
+                  Now</button>
+              </span>
+            </div>
+
+          </div>
+        </div>
+        <!-- <div class="hero-right-2 ">
+
+        </div> -->
+
+        <div class="hero-right-2   align-middle  gap-[160px] h-[100%] pt-4 flex flex-col ">
+          <img class="w-[100px] h-[100px] me-10 self-end" src="./assets/img/img-home/red.svg" alt="">
+          <span class="email bg-white  flex flex-row gap-sp-24">
+            <div class="img-email relative">
+              <img src="./assets/img/img-home/orang.svg" alt="">
+
+            </div>
+            <span class="flex flex-col">
+              <span class="name-avatar">Congratulations</span>
+              <span class="">Your admission completed</span>
+            </span>
+
+
+          </span>
+        </div>
+
+
+
+
+      </div>
+      <div class="hero-left flex flex-col w-auto">
+        <h1 class="text-white">
+
+          <span class="text-[#f48c06]"> Studying </span>
+
+
+          Online is now much easier
+        </h1>
+        <p class="leading-relaxed text-white">TOTC is an interesting platform that will teach you in more an interactive
+          way</p>
+        <div class="flex flex-row join-free  h-[80px] items-center gap-0">
+          <a class="btn-hero-add bg-brand-light ">
+            Join for free
+          </a>
+          <div class="flex  flex-row items-center gap-0">
+            <img class="mb-[-40px] img-join" src="./assets/img/img-home/circle.svg" alt="">
+            <span class="text-[#252641] text-font-22 ">Watch how it works</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="girl d-none"></div>
+  </header>
+  <!-- end header -->
+  <section class="success-section mt-sp-134 px-sp-24">
+    <div class="success-header text-center">
+      <h2 class="success-title  text-font-48 font-bold">Our Success</h2>
+      <p class="success-desc text-font-18 mt-sp-16 max-w-[600px] mx-auto">
+        Ornare id fames interdum porttitor nulla turpis etiam. Diam vitae sollicitudin at nec nam et pharetra gravida.
+        Adipiscing a quis ultrices eu ornare tristique vel nisl orci.
+      </p>
+    </div>
+
+    <div class="success-stats flex flex-wrap justify-between gap-sp-32 max-w-[1200px] mx-auto mt-sp-96">
+      <div class="stat-item text-center">
+        <span class="stat-number  text-font-96 font-light">15K+</span>
+        <p class="stat-label text-font-24 text-overlay opacity-80">Students</p>
+      </div>
+      <div class="stat-item text-center">
+        <span class="stat-number text-font-96 font-light">75%</span>
+        <p class="stat-label text-font-24  text-overlay opacity-80">Total success</p>
+      </div>
+      <div class="stat-item text-center">
+        <span class="stat-number  text-font-96 font-light">35</span>
+        <p class="stat-label text-font-24  text-overlay opacity-80">Main questions</p>
+      </div>
+      <div class="stat-item text-center">
+        <span class="stat-number  text-font-96 font-light">26</span>
+        <p class="stat-label text-font-24  text-overlay opacity-80">Chief experts</p>
+      </div>
+      <div class="stat-item text-center">
+        <span class="stat-number  text-font-96 font-light">16</span>
+        <p class="stat-label text-font-24  text-overlay opacity-80">Years of experience</p>
+      </div>
+    </div>
+  </section>
+  <section class="all-in-one mt-sp-134 px-4 ">
+    <div class="container mx-auto max-w-6xl ">
+
+      <!-- عنوان و توضیح -->
+      <div class="all-in-one-header   text-center max-w-3xl w-[100%] mx-auto ">
+        <h2 class="font-bold text-font-36  text-navy">
+          All-In-One <span class="text-teal text-font-36 font-bold">Cloud Software.</span>
+        </h2>
+        <p class="mt-4 text-font-24 text-p ">
+          TOTC is one powerful online software suite that combines all the tools
+          needed to run a successful school or office.
+        </p>
+      </div>
+
+      <div class="feature-list flex flex-col md:flex-row gap-12 md:gap-6 mt-sp-120 ">
+
+        <div
+          class="feature-card feature-card1 relative flex-1 bg-white rounded-2xl shadow-[0px_10px_60px_rgba(38,45,118,0.08)] pt-14 pb-8 px-6 text-center">
+          <!-- <div class="feature-icon absolute -top-8 left-1/2 -translate-x-1/2 w-16 h-16 rounded-full bg-indigo-500 flex items-center justify-center">
+          <img  src="./assets/img/img-home/online1.svg" alt="Billing" class="w-[100%]">
+        </div> -->
+
+          <h3 class="font-semibold text-font-30 text-navy">Online Billing, Invoicing, &amp; Contracts</h3>
+          <p class="mt-4 text-font-20 text-p">
+            Simple and secure control of your organization's financial and legal
+            transactions. Send customized invoices and contracts
+          </p>
+        </div>
+
+        <!-- کارت ۲ -->
+        <div
+          class="feature-card feature-card2 relative flex-1 bg-white rounded-2xl shadow-[0px_10px_60px_rgba(38,45,118,0.08)] pt-14 pb-8 px-6 text-center">
+          <!-- <div class="feature-icon absolute -top-8 left-1/2 -translate-x-1/2 w-16 h-16 rounded-full bg-teal-400 flex items-center justify-center">
+          <img src="./assets/img/img-home/onlin2.svg" alt="Scheduling" class="">
+        </div> -->
+          <h3 class="font-semibold text-font-30 text-navy">Easy Scheduling &amp; Attendance Tracking</h3>
+          <p class="mt-4 text-font-20 text-p">
+            Schedule and reserve classrooms at one campus or multiple campuses.
+            Keep detailed records of student attendance
+          </p>
+        </div>
+
+        <!-- کارت ۳ -->
+        <div
+          class="feature-card feature-card3 relative flex-1 bg-white rounded-2xl shadow-[0px_10px_60px_rgba(38,45,118,0.08)] pt-14 pb-8 px-6 text-center">
+
+          <!-- <img src="./assets/img/img-home/online3.svg" alt="Customer Tracking" class="w-[100px] h-[100px]"> -->
+
+          <h3 class="font-semibold text-font-30 text-navy">Customer Tracking</h3>
+          <p class="mt-4 text-font-20 text-p">
+            Automate and track emails to individuals or groups. Skilline's
+            built-in system helps organize your organization
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="what-is-totc mt-sp-160 px-4">
+    <div class="container mx-auto max-w-6xl">
+
+      <!-- عنوان و توضیح -->
+      <div class="what-header text-center max-w-5xl mx-auto">
+        <h2 class="font-semibold text-font-44 text-navy">
+          What is <span class="text-brand">TOTC?</span>
+        </h2>
+        <p class="mt-sp-20 text-font-24 text-p">
+          TOTC is a platform that allows educators to create online classes
+          whereby they can store the course materials online; manage assignments,
+          quizzes and exams; monitor due dates; grade results and provide
+          students with feedback all in one place.
+        </p>
+      </div>
+
+      <!-- کارت‌ها -->
+      <div class="role-list flex flex-col md:flex-row gap-sp-96 mt-sp-80">
+
+        <!-- مربی‌ها -->
+        <div
+          class="role-card-left relative flex-1 min-h-[360px] rounded-xl overflow-hidden bg-cover bg-center flex flex-col items-center justify-center gap-6">
+          <h3 class="font-bold text-font-32 text-white">FOR INSTRUCTORS</h3>
+          <a href="#" class="role-btn rounded-full px-sp-40  py-sp-24 border border-white text-font-22 text-white">
+            Start a class today
+          </a>
+        </div>
+
+        <!-- دانش‌آموزها -->
+        <div
+          class="role-card-right relative flex-1 min-h-[360px] rounded-xl overflow-hidden bg-cover bg-center flex flex-col items-center justify-center gap-6">
+          <h3 class="font-bold text-font-32 text-white">FOR STUDENTS</h3>
+          <a href="#" class="role-btn rounded-full px-sp-40  py-sp-24 bg-sky opacity-90 text-font-22 text-white">
+            Enter access code
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section class="you-can-do mt-sp-160 p-5 h-[512px]   w-[80%] mx-auto">
+    <div class="container container-you w-[100%] flex flex-col md:flex-row items-center gap-10">
+
+      <!-- متن -->
+      <div class="you-can-do-text flex-1">
+        <h2 class="you-can-do-title">
+          Everything you can do in a physical classroom,
+          <span>you can do with TOTC</span>
+        </h2>
+
+        <p class="you-can-do-desc mt-6 text-p">
+          TOTC’s school management software helps traditional and online schools
+          manage scheduling, attendance, payments and virtual classrooms all in
+          one secure cloud-based system.
+        </p>
+
+        <a href="./learn-more.html" class="you-can-do-link inline-block mt-6 text-p">
+          Learn more
+        </a>
+      </div>
+
+      <div class="you-can-do-media flex-1 img-class">
+        <img src="./assets/img/img-home/class.svg" alt="Classroom" class="w-full rounded-20 img-class">
+      </div>
+
+    </div>
+  </section>
+  <section class="our-features flex flex-col gap-sp-20 mt-sp-160 items-center">
+
+    <h1 class="text-font-36 text-navy font-bold ">Our
+      <span class="text-brand">
+        Features
+      </span>
+    </h1>
+    <p class="text-font-24 text-p">This very extraordinary feature, can make learning activities more efficient</p>
+  </section>
+
+
+
+
+
+  <section class="ui-classroom py-16 mt-sp-96 w-[83%] mx-auto">
+    <div class="container-ui w-full px-3 flex flex-col md:flex-row justify-between items-center gap-11">
+
+      <!-- کلاژ عکس‌ها -->
+      <div class="ui-media relative w-full md:w-[60%] aspect-[430/305]">
+
+        <!-- پس‌زمینه پنجره -->
+        <div class="absolute left-[2%] top-[11%] w-[84%] h-[72%] bg-gray-100 rounded-20 ui-media-details"></div>
+
+        <!-- مربی -->
+        <img src="./assets/img/img-home/eveny.svg" alt="Instructor" class="absolute left-[11%] top-[25%] w-[27%]">
+
+        <!-- دکمه‌ها -->
+        <div class="absolute left-[7%] top-[68%] flex flex-row gap-4">
+          <button class="rounded-full px-6  bg-[#3465E1] text-white text-font-22">Present</button>
+          <button class="rounded-full px-6  bg-[#E13468] text-white text-font-22">Call
+            <img src="./assets/img/img-home/phone 1.svg" alt="">
+
+          </button>
+        </div>
+
+        <!-- عکس‌های وسط -->
+        <img src="./assets/img/img-home/tamara.svg" alt="Tamara" class="absolute left-[51%] top-[25%] w-[18%]">
+        <img src="./assets/img/img-home/humbert.svg" alt="Humbert" class="absolute left-[51%] top-[53%] w-[18%]">
+
+        <!-- عکس‌های راست -->
+        <img src="./assets/img/img-home/adam.svg" alt="Adam" class="absolute left-[77%] top-[19%] w-[22%]">
+        <img src="./assets/img/img-home/patrica.svg" alt="Patricia" class="absolute left-[72%] top-[60%] w-[26%]">
+        <img src="./assets/img/img-home/circle22.svg" class="absolute top-[40%]
+           right-[40%] " alt="">
+      </div>
+
+      <!-- متن -->
+      <div class="ui-text w-full md:w-[40%]">
+        <h2 class="ui-title font-semibold text-font-40 text-navy">
+          A <span class="text-brand">user interface</span> designed for the classroom
+        </h2>
+
+        <ul class="ui-list flex flex-col gap-sp-40 mt-sp-48">
+          <li class="ui-item flex items-center gap-4">
+            <span
+              class="ui-icon shrink-0 w-[60px] h-[60px] rounded-full bg-white shadow-md flex items-center justify-center">
+              <img src="./assets/img/img-home/Group 72.svg" alt="">
+            </span>
+            <p class="text-font-22 text-p">Teachers don’t get lost in the grid view and have a dedicated Podium space.
+            </p>
+          </li>
+
+          <li class="ui-item flex items-center gap-4">
+            <span
+              class="ui-icon shrink-0 w-[60px] h-[60px] rounded-full bg-white shadow-md flex items-center justify-center">
+              <img src="./assets/img/img-home/Group 73.svg" alt="">
+            </span>
+            <p class="text-font-22 text-p">TA’s and presenters can be moved to the front of the class.</p>
+          </li>
+
+          <li class="ui-item flex items-center gap-4">
+            <span
+              class="ui-icon shrink-0 w-[60px] h-[60px] rounded-full bg-white shadow-md flex items-center justify-center">
+              <img src="./assets/img/img-home/users 2.svg" alt="">
+            </span>
+            <p class="text-font-22 text-p">Teachers can easily see all students and class data at one time.</p>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="tools-section py-16 w-[83%] mx-auto">
+    <div class="container-tools w-full px-3 flex flex-col md:flex-row items-center justify-between gap-11">
+
+      <!-- متن -->
+      <div class="tools-text w-full md:w-[40%]">
+        <h2 class="tools-title font-semibold text-font-40 text-navy">
+          <span class="text-brand">Tools</span> For Teachers And Learners
+        </h2>
+        <p class="tools-desc mt-6 text-font-22 text-p">
+          Class has a dynamic set of teaching tools built to be deployed and used
+          during class. Teachers can handout assignments in real-time for students
+          to complete and submit.
+        </p>
+      </div>
+
+      <!-- عکس -->
+      <div class="tools-media w-full md:w-[50%]">
+        <img src="./assets/img/img-home/girlbuti.svg" alt="Student with books" class="w-full">
+      </div>
+
+    </div>
+  </section>
+  <section class="assessments-section py-16 w-[83%] mx-auto">
+    <div class="container w-full px-3 flex flex-col md:flex-row items-center justify-between gap-11">
+
+      <!-- عکس -->
+      <div class="assessments-media w-full md:w-[50%]">
+        <img src="./assets/img/img-home/media.svg" alt="Quiz question preview" class="w-full">
+      </div>
+
+      <!-- متن -->
+      <div class="assessments-text w-full md:w-[40%]">
+        <h2 class="assessments-title font-semibold text-font-40 text-navy">
+          Assessments, <span class="text-brand">Quizzes</span>, Tests
+        </h2>
+        <p class="assessments-desc mt-6 text-font-22 text-p">
+          Easily launch live assignments, quizzes, and tests. Student results are
+          automatically entered in the online gradebook.
+        </p>
+      </div>
+
+    </div>
+  </section>
+  <section class="class-management py-10 md:py-16 w-[92%] md:w-[83%] mx-auto">
+    <div class="container-man w-full px-3 flex flex-col md:flex-row items-center justify-between gap-6 md:gap-11">
+
+      <!-- متن -->
+      <div class="class-management-text w-full md:w-[40%]">
+        <h2 class="class-management-title font-semibold text-font-40 text-navy">
+          <span class="text-brand">Class Management</span> Tools for Educators
+        </h2>
+        <p class="class-management-desc mt-6 text-font-22 text-p">
+          Class provides tools to help run and manage the class such as Class
+          Roster, Attendance, and more. With the Gradebook, teachers can review
+          and grade tests and quizzes in real-time.
+        </p>
+      </div>
+
+      <!-- عکس -->
+      <div class="class-management-media w-full md:w-[50%]">
+        <img src="./assets/img/img-home/gradybook.svg" alt="Gradebook preview" class="w-full">
+      </div>
+
+    </div>
+  </section>
+  <section class="one-on-one py-10 md:py-16 w-[92%] md:w-[83%] mx-auto">
+    <div class="container w-full px-3 flex flex-col md:flex-row items-center justify-between gap-6 md:gap-11">
+
+      <!-- عکس -->
+      <div class="one-on-one-media w-full md:w-[50%]">
+        <img src="./assets/img/img-home/One-on-One Discussions.svg" alt="Private discussion preview" class="w-full">
+      </div>
+
+      <!-- متن -->
+      <div class="one-on-one-text w-full md:w-[40%]">
+        <h2 class="one-on-one-title font-semibold text-font-40 text-navy">
+          One-on-One <span class="text-brand block">Discussions</span>
+        </h2>
+        <p class="one-on-one-desc mt-6 text-font-22 text-p">
+          Teachers and teacher assistants can talk with students privately
+          without leaving the Zoom environment.
+        </p>
+      </div>
+
+    </div>
+  </section>
+  <div class="text-center mb-sp-56">
+    <a class=" text-font-24 py-sp-20 px-sp-32 mx-auto text-[rgba(73,187,189,1)]
+rounded-[80px] border border-[rgba(73,187,189,1)] " href="#">See more features</a>
+
+  </div>
+  <section class="explore ps-sp-155 pt-sp-160 pe-sp-80">
+
+    <div class="title-explore mb-sp-96">
+
+      <h4 class="text-font-40 font-bold">Explore Course</h4>
+      <p class="text-font-24 font-medium opacity-50">Ut sed eros finibus, placerat orci id, dapibus.</p>
+    </div>
+    <div>
+
+
+
+
+
+
+      <div class="see  flex flex-row justify-between">
+        <span class="flex flex-row gap-1">
+          <img class="w-[30px] h-[30px]" src="./assets/img/img-home/android-color-palette.svg" alt="">
+          <span class="text-font-28 font-bold">lorem </span>
+
+        </span>
+        <span class="flex flex-row gap-sp-48">
+          <a class="text-font-24 text-cyan w-[auto] " href="">SEE ALL</a>
+          <img class="w-[23px]" src="./assets/img/img-home/flash.svg">
+
+        </span>
+      </div>
+      <div class="category-main labrary1 flex flex-row mt-sp-40">
+
+
+        <img class="book w-sp-160" data-index="0" src="./assets/img/img-home/Book.svg" alt="">
+        <div class="open-box first"></div>
+
+
+        <img class="book w-sp-160" data-index="1" src="./assets/img/img-home/Book (1).svg" alt="">
+        <div class="open-box first"></div>
+
+
+        <img class="book w-sp-160" data-index="2" src="./assets/img/img-home/Book3.svg" alt="">
+        <div class="open-box first"></div>
+
+
+        <img class="book w-sp-160" data-index="3" src="./assets/img/img-home/Book4.svg" alt="">
+        <div class="open-box first "></div>
+
+        <img class="book w-sp-160" data-index="4" src="./assets/img/img-home/Book5.svg" alt="">
+        <div class="open-box first"></div>
+
+        <img class="book w-sp-160" data-index="5" src="./assets/img/img-home/Book 6.svg" alt="">
+        <div class="open-box first"></div>
+
+      </div>
+      <!-- <div class="open-box second "></div> -->
+    </div>
+
+
+
+    <div class="mt-sp-120">
+      <div class="see  flex flex-row justify-between">
+        <span class="flex flex-row gap-1">
+          <img class="w-[30px] h-[30px]" src="./assets/img/img-home/android-globe.svg" alt="">
+          <span class="text-font-28 font-bold">Quisque a Consequat </span>
+
+        </span>
+        <span class="flex flex-row gap-sp-48">
+          <a class="text-font-24 text-cyan w-[auto] " href="">SEE ALL</a>
+          <img class="w-[23px]" src="./assets/img/img-home/flash.svg">
+
+        </span>
+      </div>
+      <div class="category-main2 labrary1 flex flex-row mt-sp-40">
+        <img class="photo w-sp-160" data-index="0" src="./assets/img/img-home/Book.svg" alt="">
+        <div class="open-photo"></div>
+
+
+        <img class="photo w-sp-160" data-index="1" src="./assets/img/img-home/Book (1).svg" alt="">
+        <div class="open-photo"></div>
+
+        <img class="photo w-sp-160" data-index="2" src="./assets/img/img-home/Book3.svg" alt="">
+        <div class="open-photo"></div>
+
+        <img class="photo w-sp-160" data-index="3" src="./assets/img/img-home/Book4.svg" alt="">
+        <div class="open-photo"></div>
+
+        <img class="photo w-sp-160" data-index="4" src="./assets/img/img-home/Book5.svg" alt="">
+        <div class="open-photo"></div>
+
+        <img class="photo w-sp-160" data-index="5" src="./assets/img/img-home/Book 6.svg" alt="">
+        <div class="open-photo"></div>
+
+      </div>
+    </div>
+    <div class="mt-sp-120">
+      <div class="see  flex flex-row justify-between">
+        <span class="flex flex-row gap-1">
+          <img class="w-[30px] h-[30px]" src="./assets/img/img-home/ribbon-b.svg" alt="">
+          <span class="text-font-28 font-bold">Aenean Facilisis </span>
+
+        </span>
+        <span class="flex flex-row gap-sp-48">
+          <a class="text-font-24 text-cyan w-[auto] " href="">SEE ALL</a>
+          <img class="w-[23px]" src="./assets/img/img-home/flash.svg">
+
+        </span>
+      </div>
+      <div class="category-main3 labrary1 flex flex-row mt-sp-40">
+        <img class="language w-sp-160" data-index="0" src="./assets/img/img-home/Book.svg" alt="">
+        <div class="open-lan"></div>
+
+
+        <img class="language w-sp-160" data-index="1" src="./assets/img/img-home/Book (1).svg" alt="">
+        <div class="open-lan"></div>
+
+        <img class="language w-sp-160" data-index="2" src="./assets/img/img-home/Book3.svg" alt="">
+        <div class="open-lan"></div>
+
+        <img class="language w-sp-160" data-index="3" src="./assets/img/img-home/Book4.svg" alt="">
+        <div class="open-lan"></div>
+
+        <img class="language w-sp-160" data-index="4" src="./assets/img/img-home/Book5.svg" alt="">
+        <div class="open-lan"></div>
+
+        <img class="language w-sp-160" data-index="5" src="./assets/img/img-home/Book 6.svg" alt="">
+        <div class="open-lan"></div>
+
+      </div>
+    </div>
+
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- start section go -->
+  <section class="whatsay w-[80%] mx-auto  flex flex-row gap-sp-155 mt-sp-134 gap-sp-155  ">
+    <div class="left-say w-[40%] flex  flex-col gap-[40px]">
+      <span class="text-font-20 text-[#525596]">TESTIMONIAL</span>
+      <h1 class="text-font-48 t font-bold text-navy">What They Say?</h1>
+      <p class="text-font-26 text-p">TOTC has got more than 100k positive ratings from our users around the world. </p>
+      <p class="text-font-26 text-p">Some of the students and teachers were greatly helped by the Skilline.</p>
+      <p class="text-font-26 text-p">Are you too? Please give your assessment</p>
+      <div class="flex write flex-row mt-[30px]">
+        <a class="text-font-22 btn-say text-brand py-6 ps-9 pe-sp-96 border rounded-[80px] border-e-0" href="#">Write
+          your assessment </a>
+
+
+      </div>
+    </div>
+    <div class="right-say right-say ">
+      <div class=" mySwiper swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide ps-[70px]  slide-img relative">
+            <div class="coment-say bg-white px-sp-40 pt-sp-40 flex flex-col gap-sp-32 pb-sp-28">
+              <p class="text-font-22 text-p ps-sp-32 border-s border-s-p justify-start">"Thank you so much for your
+                help. It's exactly what I've
+                been looking for. You won't regret it. It
+                really saves me time and effort. TOTC is exactly what our business has been lacking."</p>
+              <div class="flex flex-row slid1 justify-between">
+                <span class="text-font-24 font-semibold text-p ">Gloria Rose</span>
+                <span class="flex flex-col gap-sp-12">
+                  <img class="star-coment-swiper" src="./assets/img/img-home/Groupstar.svg" alt="">
+                  <span class="text-font-18 font-semibold text-p tracking-[0.02rem]">12 reviews at Yelp</span>
+                </span>
+
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide ps-[70px] slid2  slide-img relative">
+            <div class="coment-say bg-white px-sp-40 pt-sp-40 flex flex-col gap-sp-32 pb-sp-28">
+              <p class="text-font-22 text-p ps-sp-32 border-s justify-start">"Thank you so much for your help. It's
+                exactly what I've
+                been looking for. You won't regret it. It
+                really saves me time and effort. TOTC is exactly what our business has been lacking."</p>
+              <div class="flex flex-row justify-between">
+                <span class="text-font-24 font-semibold text-p ">Gloria Rose</span>
+                <span class="flex flex-col gap-sp-12">
+                  <img class="star-coment-swiper" src="./assets/img/img-home/Groupstar.svg" alt="">
+                  <span class="text-font-18 font-semibold text-p tracking-[0.02rem]">12 reviews at Yelp</span>
+                </span>
+
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide ps-[70px] slid3  slide-img relative">
+            <div class="coment-say bg-white px-sp-40 pt-sp-40  flex flex-col gap-sp-32 pb-sp-28">
+              <p class="text-font-22 text-p ps-sp-32 border-s justify-start">"Thank you so much for your help. It's
+                exactly what I've
+                been looking for. You won't regret it. It
+                really saves me time and effort. TOTC is exactly what our business has been lacking."</p>
+              <div class="flex flex-row justify-between">
+                <span class="text-font-24 font-semibold text-p ">Gloria Rose</span>
+                <span class="flex flex-col gap-sp-12">
+                  <img class="star-coment-swiper" src="./assets/img/img-home/Groupstar.svg" alt="">
+                  <span class="text-font-18 font-semibold text-p tracking-[0.02rem]">12 reviews at Yelp</span>
+                </span>
+
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="swiper-button-next "></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+
+
+    </div>
+  </section>
+
+
+  <!-- end section go -->
+
+  <!-- start news -->
+  <section class="news w-[80%] mx-auto mt-sp-155 ">
+    <h1 class="text-font-36 text-center font-bold text-navy">Lastest News and Resources</h1>
+    <p class="text-font-24 text-center text-p mt-sp-20">See the developments that have occurred to TOTC in the world</p>
+    <div class="news-main flex w-full mt-sp-120 gap-sp-120">
+      <div class="left-news w-[40%]  flex flex-col">
+        <img class="" src="./assets/img/img-home/news1.svg" alt="">
+        <span
+          class="text-font-20 mt-sp-40 mb-sp-20 w-[130px] font-medium text-white rounded-[80px] bg-brand px-sp-32 py-0.5 ">NEWS</span>
+        <h1 class="text-font-26 text-dark2 font-medium">Class adds $30 million to its balance sheet for a Zoom-friendly
+          edtech solution</h1>
+        <p class="text-font-20 text-p mt-sp-20 tracking-[0.02em]">Class, launched less than a year ago by Blackboard
+          co-founder
+          Michael Chasen, integrates exclusively...</p>
+        <a class="text-font-20 text-p tracking-[0.02em] mt-sp-32" href="#">Read more</a>
+      </div>
+      <div class="right-news w-[50%]  flex flex-col gap-sp-48 ">
+        <div class="right1 flex flex-row gap-sp-40">
+          <a class="flex flex-row gap-sp-40 w-full " href="#">
+            <div class="img-news  w-[40%] shrink-0 ">
+              <img class=" w-full" src="./assets/img/img-home/news2.svg" alt="">
+            </div>
+            <div class="text-news-details flex flex-col gap-sp-20">
+
+              <h1 class="text-font-22 text-dark2 font-medium">Class Technologies Inc. Closes $30 Million Series A
+                Financing to Meet High Demand</h1>
+              <p class="text-font-20 text-p tracking-[0.02em]">Class Technologies Inc., the company that created
+                Class,...</p>
+            </div>
+          </a>
+        </div>
+        <div class="right2 flex flex-row gap-sp-40">
+          <a class="flex flex-row gap-sp-40 w-full" href="#">
+            <div class="img-news w-[40%]  shrink-0 ">
+              <img class="w-full" src="./assets/img/img-home/news3.svg" alt="">
+            </div>
+            <div class="text-news-details flex flex-col gap-sp-20">
+
+              <h1 class="text-font-22 text-dark2 font-medium">Zoom’s earliest investors are betting millions on a better
+                Zoom for schools</h1>
+              <p class="text-font-20 text-p tracking-[0.02em]">Zoom was never created to be a consumer product.
+                Nonetheless, the...</p>
+            </div>
+          </a>
+        </div>
+        <div class="right3 flex flex-row gap-sp-40">
+          <a class="flex flex-row gap-sp-40 w-full" href="#">
+            <div class="img-news w-[40%]  shrink-0"><img class="w-full" src="./assets/img/img-home/news4.svg" alt="">
+            </div>
+            <div class="text-news-details flex flex-col gap-sp-20">
+
+              <h1 class="text-font-22 text-dark2 font-medium">Former Blackboard CEO Raises $16M to Bring LMS Features to
+                Zoom Classrooms</h1>
+              <p class="text-font-20 text-p tracking-[0.02em]">This year, investors have reaped big financial returns
+                from betting on Zoom...</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+
+  </section>
+
+
+  <!-- start footer -->
+  <footer class="mt-sp-115 w-full text-center bg-footer pt-sp-74 pb-sp-40">
+    <div class="flex flex-col justify-center text-center  w-[50%] mx-auto gap-sp-96">
+      <div class="flex flex-row justify-center gap-sp-80">
+        <img class="w-[114px]" src="./assets/img/img-home/logo-footer.svg" alt="">
+        <span class="text-font-22 text-white font-bold ps-sp-40 border-s-2 tracking-[0.05em]">Virtual Class
+          <br>
+          for Zoom</span>
+
+      </div>
+      <div class="flex flex-col gap-sp-20">
+        <p class="text-font-26 font-medium  text-center text-light">Subscribe to get our Newsletter</p>
+        <div class="flex email-div flex-row gap-4  justify-center">
+          <input type="email" placeholder="Your Email"
+            class="input input-bordered border-2 h-[60px] border-p text-p text-font-20 ps-7 py-3.5 rounded-full bg-transparent">
+          <button
+            class="btn h-[60px] rounded-full text-font-22 font-medium  bg-brand  text-white border-none shadow-0">Subscribe</button>
+        </div>
+      </div>
+      <div class="flex flex-col gap-sp-20">
+        <div class=" flex flex-row justify-center  text-font-22 text-p">
+
+          <a class="px-sp-20 border-e-2" href="#">Careers</a>
+          <a class="px-sp-20  border-e-2" href="">Privacy Policy</a>
+          <a class="px-sp-20" href="">Terms & Conditions</a>
+        </div>
+        <p class="text-font-22  text-center text-p ">© 2021 Class Technologies Inc. </p>
+      </div>
+
+
+    </div>
+
+  </footer>
+
+
+
+
+
+
+  <!-- end footer -->
+
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.mySwiper', {
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+  <script type="module"
+    src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092"
+    integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw=="
+    data-cf-beacon='{"version":"2024.11.0","token":"ec9a6c21600d4161aa74e6a2c77efad2","r":1,"spa":2}'
+    crossorigin="anonymous"></script>
+  <!-- Initialize Swiper -->
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

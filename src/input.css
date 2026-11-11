@@ -1,0 +1,245 @@
+@import "tailwindcss";
+
+@plugin "daisyui" {
+  themes: light --default, dark --prefersdark, cupcake, retro;
+    /* themes: false; */
+}
+/* @theme { */
+  /* --text-font-16: clamp(14px, 13px + 0.2vw, 16px);
+    --text-font-18: clamp(15px, 14px + 0.3vw, 18px);
+  --text-font-20: clamp(16px, 14px + 0.45vw, 20px);
+  --text-font-22: clamp(17px, 15px + 0.5vw, 22px);
+  --text-font-24: clamp(18px, 15px + 0.65vw, 24px);
+  --text-font-26: clamp(19px, 13px + 0.9vw, 26px);
+  --text-font-28: clamp(20px, 14px + 1vw, 28px);
+  --text-font-30: clamp(21px, 15px + 1.1vw, 30px);
+  --text-font-32: clamp(22px, 16px + 1.2vw, 32px);
+  --text-font-36: clamp(24px, 17px + 1.4vw, 36px);
+  --text-font-40: clamp(26px, 19px + 1.5vw, 40px);
+  --text-font-44: clamp(28px, 20px + 1.7vw, 44px);
+  --text-font-48: clamp(30px, 18px + 2.1vw, 48px);
+  --text-font-54: clamp(30px, 18px + 2.5vw, 54px);
+  --text-font-96: clamp(48px, 24px + 4.8vw, 96px);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  --spacing-sp-4: clamp(3px, 2.5px + 0.05vw, 4px);
+  --spacing-sp-8: clamp(6px, 5px + 0.15vw, 8px);
+  --spacing-sp-12: clamp(8px, 7px + 0.25vw, 12px);
+  --spacing-sp-16: clamp(12px, 10px + 0.3vw, 16px);
+
+
+
+   --spacing-sp-20: clamp(14px, 11px + 0.4vw, 20px);
+  --spacing-sp-24: clamp(16px, 12px + 0.5vw, 24px);
+  --spacing-sp-28: clamp(18px, 13px + 0.7vw, 28px);
+  --spacing-sp-32: clamp(20px, 14px + 0.9vw, 32px);
+  --spacing-sp-40: clamp(24px, 16px + 1.2vw, 40px);
+  --spacing-sp-48: clamp(28px, 18px + 1.5vw, 48px);
+  --spacing-sp-56: clamp(32px, 19px + 1.8vw, 56px);
+  --spacing-sp-60: clamp(34px, 19px + 2.1vw, 60px);
+  --spacing-sp-64: clamp(36px, 20px + 2.2vw, 64px);
+  --spacing-sp-74: clamp(42px, 23px + 2.6vw, 74px);
+  --spacing-sp-80: clamp(44px, 24px + 2.8vw, 80px);
+  --spacing-sp-96: clamp(52px, 26px + 3.3vw, 96px);
+  --spacing-sp-115: clamp(58px, 29px + 3.9vw, 115px);
+  --spacing-sp-120: clamp(60px, 30px + 4.2vw, 120px);
+  --spacing-sp-134: clamp(66px, 32px + 4.7vw, 134px);
+--spacing-sp-155: clamp(78px, 39px + 5.3vw, 155px);
+  --spacing-sp-160: clamp(80px, 40px + 5.5vw, 160px);
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ @theme {
+  /* فونت‌ها */
+  /* --text-font-16: clamp(14px, 13.52px + 0.129vw, 16px);
+  --text-font-18: clamp(15px, 14.28px + 0.194vw, 18px);
+  --text-font-20: clamp(16px, 15.05px + 0.258vw, 20px);
+  --text-font-22: clamp(17px, 15.81px + 0.323vw, 22px);
+  --text-font-24: clamp(18px, 16.57px + 0.387vw, 24px);
+  --text-font-26: clamp(19px, 17.33px + 0.452vw, 26px);
+  --text-font-28: clamp(20px, 18.09px + 0.516vw, 28px);
+  --text-font-30: clamp(21px, 18.85px + 0.581vw, 30px);
+  --text-font-32: clamp(22px, 19.61px + 0.645vw, 32px);
+  --text-font-36: clamp(24px, 21.14px + 0.774vw, 36px);
+  --text-font-40: clamp(26px, 22.66px + 0.903vw, 40px);
+  --text-font-44: clamp(28px, 24.18px + 1.032vw, 44px);
+  --text-font-48: clamp(30px, 25.70px + 1.161vw, 48px);
+  --text-font-54: clamp(30px, 24.27px + 1.548vw, 54px);
+  --text-font-96: clamp(48px, 36.54px + 3.097vw, 96px);
+
+  --spacing-sp-4:   clamp(3px,  2.76px + 0.065vw, 4px);
+  --spacing-sp-8:   clamp(6px,  5.52px + 0.129vw, 8px);
+  --spacing-sp-12:  clamp(8px,  7.05px + 0.258vw, 12px);
+  --spacing-sp-16:  clamp(12px, 11.05px + 0.258vw, 16px);
+  --spacing-sp-20:  clamp(14px, 12.57px + 0.387vw, 20px);
+  --spacing-sp-24:  clamp(16px, 14.09px + 0.516vw, 24px);
+  --spacing-sp-28:  clamp(18px, 15.61px + 0.645vw, 28px);
+  --spacing-sp-32:  clamp(20px, 17.14px + 0.774vw, 32px);
+  --spacing-sp-40:  clamp(24px, 20.18px + 1.032vw, 40px);
+  --spacing-sp-48:  clamp(28px, 23.23px + 1.290vw, 48px);
+  --spacing-sp-56:  clamp(32px, 26.27px + 1.548vw, 56px);
+  --spacing-sp-60:  clamp(34px, 27.79px + 1.677vw, 60px);
+  --spacing-sp-64:  clamp(36px, 29.32px + 1.806vw, 64px);
+  --spacing-sp-74:  clamp(42px, 34.36px + 2.065vw, 74px);
+  --spacing-sp-80:  clamp(44px, 35.41px + 2.323vw, 80px);
+  --spacing-sp-96:  clamp(52px, 41.50px + 2.839vw, 96px);
+  --spacing-sp-115: clamp(58px, 44.39px + 3.677vw, 115px);
+  --spacing-sp-120: clamp(60px, 45.68px + 3.871vw, 120px);
+  --spacing-sp-134: clamp(66px, 49.77px + 4.387vw, 134px);
+  --spacing-sp-155: clamp(78px, 59.62px + 4.968vw, 155px);
+  --spacing-sp-160: clamp(80px, 60.90px + 5.161vw, 160px);
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  --text-font-16: clamp(14px, calc(14px + 2 * (100vw - 1024px) / 576), 16px);
+  --text-font-18: clamp(15px, calc(15px + 3 * (100vw - 1024px) / 576), 18px);
+  --text-font-20: clamp(16px, calc(16px + 4 * (100vw - 1024px) / 576), 20px);
+  --text-font-22: clamp(17px, calc(17px + 5 * (100vw - 1024px) / 576), 22px);
+  --text-font-24: clamp(18px, calc(18px + 6 * (100vw - 1024px) / 576), 24px);
+  --text-font-26: clamp(19px, calc(19px + 7 * (100vw - 1024px) / 576), 26px);
+  --text-font-28: clamp(20px, calc(20px + 8 * (100vw - 1024px) / 576), 28px);
+  --text-font-30: clamp(21px, calc(21px + 9 * (100vw - 1024px) / 576), 30px);
+  --text-font-32: clamp(22px, calc(22px + 10 * (100vw - 1024px) / 576), 32px);
+  --text-font-36: clamp(24px, calc(24px + 12 * (100vw - 1024px) / 576), 36px);
+  --text-font-40: clamp(26px, calc(26px + 14 * (100vw - 1024px) / 576), 40px);
+  --text-font-44: clamp(28px, calc(28px + 16 * (100vw - 1024px) / 576), 44px);
+  --text-font-48: clamp(30px, calc(30px + 18 * (100vw - 1024px) / 576), 48px);
+  --text-font-54: clamp(30px, calc(30px + 24 * (100vw - 1024px) / 576), 54px);
+  --text-font-96: clamp(48px, calc(48px + 48 * (100vw - 1024px) / 576), 96px);
+
+  /* فاصله‌ها */
+  --spacing-sp-4:   clamp(3px,  calc(3px + 1 * (100vw - 1024px) / 576), 4px);
+  --spacing-sp-8:   clamp(6px,  calc(6px + 2 * (100vw - 1024px) / 576), 8px);
+  --spacing-sp-12:  clamp(8px,  calc(8px + 4 * (100vw - 1024px) / 576), 12px);
+  --spacing-sp-16:  clamp(12px, calc(12px + 4 * (100vw - 1024px) / 576), 16px);
+  --spacing-sp-20:  clamp(14px, calc(14px + 6 * (100vw - 1024px) / 576), 20px);
+  --spacing-sp-24:  clamp(16px, calc(16px + 8 * (100vw - 1024px) / 576), 24px);
+  --spacing-sp-28:  clamp(18px, calc(18px + 10 * (100vw - 1024px) / 576), 28px);
+  --spacing-sp-32:  clamp(20px, calc(20px + 12 * (100vw - 1024px) / 576), 32px);
+  --spacing-sp-40:  clamp(24px, calc(24px + 16 * (100vw - 1024px) / 576), 40px);
+  --spacing-sp-48:  clamp(28px, calc(28px + 20 * (100vw - 1024px) / 576), 48px);
+  --spacing-sp-56:  clamp(32px, calc(32px + 24 * (100vw - 1024px) / 576), 56px);
+  --spacing-sp-60:  clamp(34px, calc(34px + 26 * (100vw - 1024px) / 576), 60px);
+  --spacing-sp-64:  clamp(36px, calc(36px + 28 * (100vw - 1024px) / 576), 64px);
+  --spacing-sp-74:  clamp(42px, calc(42px + 32 * (100vw - 1024px) / 576), 74px);
+  --spacing-sp-80:  clamp(44px, calc(44px + 36 * (100vw - 1024px) / 576), 80px);
+  --spacing-sp-96:  clamp(52px, calc(52px + 44 * (100vw - 1024px) / 576), 96px);
+  --spacing-sp-115: clamp(58px, calc(58px + 57 * (100vw - 1024px) / 576), 115px);
+  --spacing-sp-120: clamp(60px, calc(60px + 60 * (100vw - 1024px) / 576), 120px);
+  --spacing-sp-134: clamp(66px, calc(66px + 68 * (100vw - 1024px) / 576), 134px);
+  --spacing-sp-155: clamp(78px, calc(78px + 77 * (100vw - 1024px) / 576), 155px);
+  --spacing-sp-160: clamp(80px, calc(80px + 80 * (100vw - 1024px) / 576), 160px);
+  /* رنگ‌ها: بدون تغییر، همون قبلی */
+    --color-brand: #49bbbd;
+  --color-brand-light: #7eccce;
+  --color-white: #ffffff;
+  --color-dark:rgba(89, 89, 89, 1);
+  --color-overlay:#010514cc;
+  --color-p:#696984;
+  --color-navy: #2F327D;
+  --color-teal: #00CBB8;
+  --color-sky: #23BDEE;
+  --color-bg-blue: #EBF5FF;
+  --color-cyan: #00BCD4;
+  --color-border: #599BA9;
+  --color-dark2: #252641;
+--color-light: #B2B3CF;
+ --color-footer: #252641;   
+
+
+
+
+  --color-grad-start: #136cb5;
+--color-grad-end: #49bbbd;
+
+
+}
+@plugin "daisyui/theme" {
+  name: "light";
+  default: true;
+  color-scheme: light;
+
+  /* لازم برای دیزی‌یو‌آی */
+  /* --color-base-100: #ffffff;
+  --color-base-content: #252641;
+ */
+  /* رنگ‌های خودت */
+}
+
+@plugin "daisyui/theme" {
+  name: "dark";
+  prefersdark: true;
+  color-scheme: dark;
+
+
+  /* --color-base-100: #14172b;
+  --color-base-200: #1d2140;
+  --color-base-300: #2a2f55;
+  --color-base-content: #e8eaf6;
+  --color-primary: #3a9ea0;
+  --color-primary-content: #ffffff;
+  --color-secondary: #f48c06;
+  --color-secondary-content: #ffffff;
+  --color-accent: #5fb8ba; */
+  /* --color-white:rgba(89, 89, 89, 1); */
+    --color-white:#161A20;
+
+  --color-dark: #f5f5f5;
+    --color-dark2: #f5f5f5;
+
+  --color-bg-blue: #1B2A41;
+    /* --color-dark2: #20252e6e; */
+
+}
